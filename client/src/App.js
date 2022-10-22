@@ -1,12 +1,33 @@
 import Header from './Components/Header'
 import InfoHeader from './Components/InfoHeader'
+import {Box,styled} from '@mui/material';
+
+
+// styled components
+
+const StyledContainerBox=styled(Box)`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  width:100%;
+`;
+
+const StyledBox=styled(Box)`
+  width:60%;
+`;
 
 function App() {
   return (
-    <div className="App">
+    <StyledContainerBox>
+
       <Header/>
-      <InfoHeader/>
-    </div>
+
+      <StyledBox>
+        <InfoHeader/>
+      </StyledBox>
+      
+    </StyledContainerBox>
   );
 }
 

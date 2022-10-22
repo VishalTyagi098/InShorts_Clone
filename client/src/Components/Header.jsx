@@ -1,10 +1,11 @@
 import * as React from 'react';
-import {AppBar,Box,Toolbar,Typography,Button,IconButton,styled} from '@mui/material';
+import {AppBar,Box,Toolbar,IconButton,styled} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-// src="https://assets.inshorts.com/website_assets/images/logo_inshorts.png"
-
 
 // Styled components
+const StyledBox=styled(Box)`
+  width:100%;
+`;
 const StyledHeader=styled(AppBar)`
   background-color:#ffff;
   height:70px;
@@ -22,7 +23,7 @@ const Image=styled('img')({
 
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <StyledBox sx={{ flexGrow: 1 }}>
       <StyledHeader position="static">
         <Toolbar>
           <IconButton
@@ -37,6 +38,6 @@ export default function Header() {
             <Image src="https://assets.inshorts.com/website_assets/images/logo_inshorts.png" alt="" />
         </Toolbar>
       </StyledHeader>
-    </Box>
+    </StyledBox>
   );
 }

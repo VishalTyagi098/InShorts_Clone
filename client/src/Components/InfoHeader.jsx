@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {AppBar,Box,Toolbar,Typography,Button,IconButton,styled} from '@mui/material';
+import {Box,Typography,styled} from '@mui/material';
 
 // styled components
 const StyledBox=styled(Box)`
@@ -17,12 +17,13 @@ function InfoHeader() {
   return (
     <div>
       <StyledBox>
+
         <Typography>
           For the best experience use inshorts app on your  smartphone.
         </Typography>
         
         <StyledImage src="https://assets.inshorts.com/website_assets/images/appstore.png" alt="" />
-          <StyledImage src="https://assets.inshorts.com/website_assets/images/playstore.png" alt="" />
+        <StyledImage src="https://assets.inshorts.com/website_assets/images/playstore.png" alt="" />
       </StyledBox>
     </div>
   )
