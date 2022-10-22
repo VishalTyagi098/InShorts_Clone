@@ -15,6 +15,7 @@ const StyledContainerBox=styled(Box)`
 
 const StyledBox=styled(Box)`
   width:60%;
+  margin-top:2%
 `;
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
       <StyledBox>
         <InfoHeader/>
       </StyledBox>
-      
+
     </StyledContainerBox>
   );
 }

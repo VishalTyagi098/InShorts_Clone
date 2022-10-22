@@ -8,19 +8,24 @@ const StyledBox=styled(Box)`
   justify-content:center;
   align-items:center;
   height:48px;
-`
+`;
 const StyledImage=styled('img')({
   height:40,
-})
+  marginLeft:20,
+});
+
+const StyledTypography=styled(Typography)`
+  color:white;
+`
 
 function InfoHeader() {
   return (
     <div>
       <StyledBox>
 
-        <Typography>
+        <StyledTypography>
           For the best experience use inshorts app on your  smartphone.
-        </Typography>
+        </StyledTypography>
         
         <StyledImage src="https://assets.inshorts.com/website_assets/images/appstore.png" alt="" />
         <StyledImage src="https://assets.inshorts.com/website_assets/images/playstore.png" alt="" />
