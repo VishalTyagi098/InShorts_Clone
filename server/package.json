@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VishalTyagi098/inShorts_clone/issues"
   },
-  "homepage": "https://github.com/VishalTyagi098/inShorts_clone#readme"
+  "homepage": "https://github.com/VishalTyagi098/inShorts_clone#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
