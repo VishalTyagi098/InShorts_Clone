@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+// This creates the schema
 const newsSchema=new mongoose.Schema({
   title:{
     type:String,
@@ -15,7 +16,8 @@ const newsSchema=new mongoose.Schema({
   },
   url:{
     type:String,
-    required:true
+    required:true,
+    unique:true
   },
   timestamp:{
     type:String,
@@ -30,3 +32,8 @@ const newsSchema=new mongoose.Schema({
     required:true
   },
 });
+
+// this creates the collection named 'news' by validating the 'newsSchema' 
+const news=mongoose.model('news',newsSchema);
+
+export default news;
