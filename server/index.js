@@ -1,15 +1,18 @@
 import express from 'express';
 import Connection from './database/db.js';
 import defaultData from './default.js';
+import Route from './routes/Route.js';
 
 const app=express();
 
+// 4. calling routes
+app.use('/',Route);
 
 const PORT=8000;
 
-// connects backend to db
+// 1. connects backend to db
 Connection();
-// starts the backend server
+// 2. starts the backend server
 app.listen(PORT,()=>console.log(`Server is running successfully at port ${PORT}`));
-// sends default data to db
+// 3. sends default data to db
 defaultData();
