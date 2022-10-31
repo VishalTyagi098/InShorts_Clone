@@ -1,8 +1,10 @@
 import React from 'react'
 import {useEffect,useState} from 'react';
-import {Box} from '@mui/material';
+
+
 
 import { getNews } from '../service/api.js';
+import ArticleCard from './ArticleCard.jsx';
 
 function Articles() {
 
@@ -14,13 +16,16 @@ function Articles() {
 
   const dailyNews=async()=>{
     let response = await getNews();
-    console.log(response.data)
     setNews(response.data)
   }
 
   return (
     <div>
-      
+      {
+        news.map(data=>(
+          <ArticleCard/>
+        ))
+      }
     </div>
   )
 }
