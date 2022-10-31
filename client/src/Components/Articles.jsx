@@ -2,7 +2,7 @@ import React from 'react'
 import {useEffect} from 'react';
 import {Box} from '@mui/material';
 
-import { getNews } from '../../service/api';
+import { getNews } from '../service/api.js';
 
 function Articles() {
 

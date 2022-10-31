@@ -2,9 +2,11 @@ import express from 'express';
 import Connection from './database/db.js';
 import defaultData from './default.js';
 import Route from './routes/Route.js';
+import cors from 'cors'
 
 const app=express();
 
+app.use(cors())
 // 4. calling routes
 app.use('/',Route);
 

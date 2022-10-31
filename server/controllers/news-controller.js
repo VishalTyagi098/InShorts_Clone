@@ -1,7 +1,7 @@
 
-import news from "../models/news-schema"
+import news from "../models/news-schema.js"
 
-export default getNews= async (request,response)=>{
+export const getNews= async (request,response)=>{
   try{
     let data= await news.find({});
     response.status(200).json(data);
