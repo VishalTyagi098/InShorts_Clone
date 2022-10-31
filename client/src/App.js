@@ -7,15 +7,14 @@ import Articles from './Components/Articles';
 
 function App() {
   return (
-    <div>
-
+    <div className='flex flex-col justify-center items-center'>
       <Header/>
-
-      <div>
+      <div className='w-[900px] flex flex-col justify-center items-center border-2 border-black'>
         <InfoHeader/>
+        <Articles/>
       </div>
 
-      {/* <Articles/> */}
+      
 
     </div>
   );

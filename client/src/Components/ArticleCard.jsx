@@ -1,8 +1,10 @@
 import React from 'react'
 
-function ArticleCard() {
+function ArticleCard({data}) {
   return (
-    <div>ArticleCard</div>
+    <div>
+      <img src={data.url} alt="" />
+    </div>
   )
 }
 

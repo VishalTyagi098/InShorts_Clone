@@ -23,7 +23,7 @@ function Articles() {
     <div>
       {
         news.map(data=>(
-          <ArticleCard/>
+          <ArticleCard data={data}/>
         ))
       }
     </div>
