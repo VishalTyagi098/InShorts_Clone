@@ -20,7 +20,7 @@ function Articles() {
   }
 
   return (
-    <div className='lg:w-full md:w-[50%] w-[70%]'>
+    <div className='lg:w-full md:w-[50%] w-[90%]'>
       {
         news.map(data=>(
           <ArticleCard data={data}/>
