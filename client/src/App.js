@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='flex flex-col justify-center items-center'>
       <Header/>
-      <div className='w-[900px] flex flex-col justify-center items-center border-2 border-black'>
+      <div className='w-[900px] flex flex-col justify-center items-center'>
         <InfoHeader/>
         <Articles/>
       </div>

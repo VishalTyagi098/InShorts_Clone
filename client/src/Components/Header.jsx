@@ -4,7 +4,7 @@ import menuIcon from '../images/menuIcon.png'
 
 export default function Header() {
   return (
-    <div className='w-full flex justify-center items-center h-[72px] relative shadow-[0_2px_5px_0px_rgba(0,0,0,0.16)] '>
+    <div className='w-full flex justify-center items-center h-[72px] relative shadow-card '>
 
       <div className="mr-auto ml-5">
         <img src={menuIcon} alt="" width={30}/>
